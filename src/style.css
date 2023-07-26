@@ -1,0 +1,20 @@
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/295/original/world_map_foto.jpg?1690385973);
+  background-size: cover;
+}
+#container{
+text-align:center;
+display:block;
+margin: 30px auto;
+background-color: rgb(10, 92, 83);
+max-width: 300px;
+border-radius: 10px;
+padding: 20px 10px;
+}
+
+h1{
+    color:white;
+}
+footer{
+    color:white;
+}
