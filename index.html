@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -18,31 +20,31 @@
         <option value="sydney">🐨Sydney &#127462;&#127482;</option>
       </select>
 
-    <div id="featuredcity">
-        <div id=cityDate>
-            <h2 id="cityname">🍻Wasserburg &#127465;&#127466;</h2>
-            <div id="date">July 27, 2023</div>
+    <div class="featuredcity" id="berlin">
+        <div class=cityDate>
+            <h2 class="cityname">🍻Berlin &#127465;&#127466;</h2>
+            <div class="date"></div>
         </div>
-        <div id="time">08:53 <small>A.M.</small></div>
+        <div class="time"></div>
      </div>
-     <div id="featuredcity">   
-        <div id=cityDate>
-            <h2 id="cityname">🏝️Davao City &#127477;&#127469;</h2>
-            <div id="date">July 27, 2023</div>
+     <div class="featuredcity" id="manila">   
+        <div class=cityDate>
+            <h2 class="cityname">🏝️Manila &#127477;&#127469;</h2>
+            <div class="date"></div>
         </div>
-        <div id="time">08:53 <small>A.M.</small></div>
+        <div class="time"></div>
     </div>  
-    <div id="featuredcity">   
-        <div id=cityDate>
-            <h2 id="cityname">🌉San Francisco &#127482;&#127480;</h2>
-            <div id="date">July 27, 2023</div>
+    <div class="featuredcity" id="new-york">   
+        <div class=cityDate>
+            <h2 class="cityname">🏙️New York &#127482;&#127480;</h2>
+            <div class="date"></div>
         </div>
-        <div id="time">08:53 <small>A.M.</small></div>
+        <div class="time"></div>
     </div>  
 
     </div>
     <footer>
-      Designed by <strong>CMSpeckmaier</strong> </br> and is open sourced in
+      Designed by <strong>C.M.Speckmaier</strong> and is open sourced in
       <a href="https://github.com/Cecille-SheCodes/World-Clock-CMS" target="_blank"> GitHub</a>.
     </footer>
 

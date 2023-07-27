@@ -1,12 +1,13 @@
 body {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/295/original/world_map_foto.jpg?1690385973);
-  background-size: cover;
+  background-size: contain;
+ 
 }
 #container {
   
   display: block;
   margin: 30px auto;
-  background-color: rgb(10, 92, 83);
+  background-color: #E3A782;
   max-width: 300px;
   border-radius: 10px;
   padding: 20px 10px;
@@ -15,50 +16,63 @@ body {
 }
 
 h1 {
-  color: white;
+  color:#F2E3C6;
   font-size: 36px;
   text-align: center;
+  text-shadow: 1px 1px 2px #3e2312;
 }
 select {
   width: 100%;
   font-size: 18px;
   border-radius: 4px;
   padding: 10px;
+   background-color: #F2E3C6;
+        color: rgb(48, 27, 2);
+        border-color:#CAD088;
+        border-width: 2px;
 }
 
-#featuredcity {
-  color: white;
+.featuredcity {
+ 
   display: flex;
   margin: 5px 5px;
   justify-content: space-between;
   padding: 25px 0 20px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
 }
 
-#featuredcity:last-child {
+.featuredcity:last-child {
   border: none;
 }
-#cityname{
+.cityname{
     margin:0;
     font-size: 16px;
+    opacity: 0.7;
+    
 }
-#date {
+.date {
   opacity: 0.7;
   font-size: 13px;
 }
 
-#time {
+.time {
   font-size: 30px;
   font-weight: bold;
+  color:white;
+  opacity: 0.7;
+  text-shadow: 1px 1px 2px #3e2312;
+
 }
 
-#time small {
+.time small {
   font-size: 15px;
   vertical-align: middle;
   line-height: 30px;
+  color:black;
+  opacity: 0.7;
 }
 footer {
-  color: rgb(17, 5, 5);
+  color: rgb(48, 27, 2);
   text-align: Center;
-  font-size: 13px;
+  font-size: 18px;
 }
