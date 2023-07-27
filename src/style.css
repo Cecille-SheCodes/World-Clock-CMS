@@ -1,6 +1,6 @@
 body {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/295/original/world_map_foto.jpg?1690385973);
-  background-size: contain;
+  background-size: cover;
  
 }
 #container {

@@ -36,5 +36,29 @@ manilaTimeElement.innerHTML = moment()
     .tz("America/New_York")
     .format("h:mm:ss [<small>]A[</small>]");
 }
+
 updateTime();
 setInterval(updateTime, 1000);
+
+function updateCity(event) {
+  let cityTZ = event.target.value;
+  let cityNames = cityTZ.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(cityTZ);
+
+  let citiesElement = document.querySelector("#citycontainer");
+  citiesElement.innerHTML = ` 
+<div class="featuredcity">
+    <div>
+    <h2 class="cityname">${cityNames}</h2>
+    <div class="date">${cityTime.format("dddd, MMMM D, YYYY")}</div>
+    </div>
+    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    "A"
+  )} </small>
+    </div>
+</div>
+`;
+}
+
+let citySelectElement = document.querySelector("#city");
+citySelectElement.addEventListener("change", updateCity);
