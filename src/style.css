@@ -80,7 +80,8 @@ input {
     color:  #F2E3C6;
     border-radius: 6px;
     display:block;
-    margin: 5px auto;
+    margin: 25px auto;
+    padding: 3px 2px;
 }
 a{
     text-decoration: none;
