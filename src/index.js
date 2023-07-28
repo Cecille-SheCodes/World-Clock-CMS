@@ -42,6 +42,9 @@ setInterval(updateTime, 1000);
 
 function updateCity(event) {
   let cityTZ = event.target.value;
+  if (cityTZ === "current"){
+    cityTZ = moment.tz.guess();
+  }
   let cityNames = cityTZ.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTZ);
 
@@ -52,12 +55,13 @@ function updateCity(event) {
     <h2 class="cityname">${cityNames}</h2>
     <div class="date">${cityTime.format("dddd, MMMM D, YYYY")}</div>
     </div>
-    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
-    "A"
-  )} </small>
+    <div class="time">${cityTime.format("h:mm:ss")} 
+    <small>${cityTime.format("A")} </small>
     </div>
 </div>
+<input type="button" value = "Back" onclick="history.go(0)" />
 `;
+
 }
 
 let citySelectElement = document.querySelector("#city");

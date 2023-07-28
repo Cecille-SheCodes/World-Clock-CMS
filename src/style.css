@@ -41,9 +41,6 @@ select {
   border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
 }
 
-.featuredcity:last-child {
-  border: none;
-}
 .cityname{
     margin:0;
     font-size: 16px;
@@ -74,5 +71,18 @@ select {
 footer {
   color: rgb(48, 27, 2);
   text-align: Center;
-  font-size: 18px;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+input {
+    background-color: #3e2312;
+    color:  #F2E3C6;
+    border-radius: 6px;
+    display:block;
+    margin: 5px auto;
+}
+a{
+    text-decoration: none;
+    color: #F2E3C6;
 }
